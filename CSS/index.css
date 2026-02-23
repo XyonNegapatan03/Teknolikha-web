@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.bg-dark-blue{
+  background-color: #0F1C2E !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../IMG/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.line{
+  width: 100px;
+  height: 4px;
+  background-color: orange;
+}
+
+.section-image{
+  outline: 3px solid orange;
+  outline-offset: 6px;
+}
+
+.customer-promise-section{
+  background-color: #624f4f;
+  padding: 20px 0;
+}
+
+.partner-card{
+  border: 1px solid lightgray;
+
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #555;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}

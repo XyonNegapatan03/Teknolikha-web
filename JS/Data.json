@@ -1,0 +1,127 @@
+{
+    "Home" :[
+        {
+        "HeroSection":[
+            {
+                "Title": "Teknolikha Printing Services",
+                "SubTitle": "Your trusted Partner for Quality Pricing Solutions",
+                "Paragraph": "At teknolikha printing solutions for business, schools, organizations, and individuals. From small custom prints to large-format advertising materials, we bring your ideas to life with precision and care powered by state-of-the-art-technology."
+            }
+        ],
+        "WhatWeDoSection":[
+            {
+                "Description": "We specialize in a wide range of printing services designed to support your marketing, events, and personal projects.",
+                "Contacts":[
+                    {
+                        "Email":"teknolikha@gmail.com",
+                        "Phone":"0910 794 9309"
+                    }
+                ],
+                "Features":[
+                    "Tarpaulin & Panaflex Printing",
+                    "Sublimation & Custom Apparel",
+                    "Stickers & Labels",
+                    "Photo Printing & Souvenirs",
+                    "Plaques, Engraving & Awards"
+                ]
+            }
+        ],
+        "partners": [
+            {
+                "name":"Partner No. 1",
+                "description":"This is partner number 1"
+            },
+            {
+                "name": "Partner No. 2",
+                "description":"This is partner number 2"
+            },
+            {
+                "name": "Partner No. 3",
+                "description": "This is partner number 3"
+            },
+            {
+                "name": "Partner No. 4",
+                "description": "This is partner number 4"
+            },
+            {
+                "name": "Partner Nol 5",
+                "description": "This is partner number 5"
+            }
+        ]
+            }
+    ],
+    "About": [
+        {
+        "Thumbnail": { "Title": "About" },
+        "WhoWeAre": {
+            "Title": "Who We Are",
+            "Paragraph": "Teknolikha Printing Services is a locally operated business dedicated to professional printing. We combine modern technology and skilled craftsmanship to deliver top-quality products.",
+            "Image": "IMG/background.png",
+            "Branches": ["Talisay, Santa fe, Cebu", "Marikaban, Santa fe, Cebu"]
+        },
+        "MissionVision": {
+            "Mission": "Provide accessible, high-quality, affordable printing with excellent customer service",
+            "Vision": "Become the trusted printing partner in the local market, known for innovation quality, and dependable service"
+        },
+        "Values": [
+            { "Icon": "fa-circle-check", "Title": "Quality First", "Text": "Excellence in every print" },
+            { "Icon": "fa-users", "Title": "Customer Focus", "Text": "Listening to client needs" },
+            { "Icon": "fa-handshake", "Title": "Integrity", "Text": "Honest pricing & communication" },
+            { "Icon": "fa-clock", "Title": "Reability", "Text": "On-time delivery" },
+            { "Icon": "fa-lightbulb-on", "Title": "Innovation", "Text": "Continuous improvement" }
+        ]
+        }
+  ],
+  "Projects" :[
+    
+    {
+        "HeaderTitle": "Projects",
+        "SectionTitle": "Our Projects Completed",
+        "List": [
+            { "Name": "Business Cards", "Description": "Premium matte finish cards for local entrepreneurs.", "Image": " " },
+            { "Name": "Event Banners", "Description": "Large format vinyl banners for the Santa Fe fiesta.", "Image": " " },
+            { "Name": "Custom T-Shirts", "Description": "Heat press vinyl designs for school organizations.", "Image": " " },
+            { "Name": "Brochures", "Description": "Tri-fold marketing materials for tourism agencies.", "Image": " " },
+            { "Name": "Product Labels", "Description": "Waterproof stickers for local food packaging.", "Image": " " },
+            { "Name": "Wedding Invites", "Description": "Elegant embossed invitations with custom envelopes.", "Image": " " },
+            { "Name": "Signages", "Description": "Durable outdoor signs for shop storefronts.", "Image": " " },
+            { "Name": "Menu Prints", "Description": "Laminated menu cards for restaurants and cafes.", "Image": " " },
+            { "Name": "Flyers", "Description": "High-volume promotional flyers for business openings.", "Image": " " }
+        ]
+    }
+    
+  ],
+
+  "Services": [
+    {
+      "Header": "Services",
+      "MainTitle": "Our Services",
+      "List": [
+        { "Title": "Sublimation Printing", "Desc": "High-quality transfers for mugs, shirts, and more.", "Image": "IMG/sublimation.jpg" },
+        { "Title": "Tarpaulin & Panaflex", "Desc": "Durable outdoor signage for events and businesses.", "Image": "IMG/Tarpaulin.jpg" },
+        { "Title": "Stickers", "Desc": "Custom vinyl and paper stickers in various finishes.", "Image": "IMG/stickers.jpg" },
+        { "Title": "Plaque", "Desc": "Recognition and award plaques with custom engraving.", "Image": "IMG/plaque.jpg" },
+        { "Title": "Sintraboard", "Desc": "Rigid and lightweight board prints for displays.", "Image": "IMG/sintraboard.jpg" },
+        { "Title": "Photo Printing", "Desc": "Professional grade photo prints in all sizes.", "Image": "IMG/photo.jpg" },
+        { "Title": "Invitation & Souvenir", "Desc": "Customized gifts and cards for all occasions.", "Image": "IMG/souvenir.jpg" },
+        { "Title": "School ID & Lace", "Desc": "Complete ID solutions for students and staff.", "Image": "IMG/id.jpg" },
+        { "Title": "Engraving", "Desc": "Precision laser engraving on various materials.", "Image": "IMG/engraving.jpg" },
+        { "Title": "3D Printing", "Desc": "Rapid prototyping and custom 3D model prints.", "Image": "IMG/3d.jpg" },
+        { "Title": "Commercial Calendar", "Desc": "Branded yearly calendars for business marketing.", "Image": "IMG/calendar.jpg" }
+      ]
+    }
+  ],
+
+  "Contact": [
+    {
+      "Thumbnail": "Contact Us",
+      "Addresses": [
+        "Talisay, Santa Fe, Cebu",
+        "Marikaban, Santa Fe, Cebu"
+      ],
+      "Phone": "0910 794 9309",
+      "Email": "teknolikha@gmail.com",
+      "MapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.393136078134!2d123.80365517416526!3d11.158499989014482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99d733169fdc5%3A0x5b6f0a87cc23d8ef!2sTeknolikha!5e0!3m2!1sen!2sph!4v1770639348288!5m2!1sen!2sph"
+    }
+  ]
+}

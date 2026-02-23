@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar color */
+.bg-dark-blue{
+  background-color: #0F1C2E !important;
+}
+
+/* Thumbnail */
+.thumbnail{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.thumbnail .title{
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Section image */
+.section-image{
+  outline: 2px solid orange;
+  outline-offset: 6px;
+}
+
+/* Mission icons */
+.mission-icon{
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+/* Mission & Vision bg */
+.mission-vision-section{
+  background-color: #e2f5fb;
+}
+
+/* Value cards */
+.value-card{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.value-card:hover{
+  transform: scale(1.08);
+  box-shadow: 0 0 10px lightgray;
+}
+
+.value-card .icon{
+  margin-bottom: 15px;
+}
