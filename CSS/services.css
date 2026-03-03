@@ -1,62 +1,64 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* NAV */
-.bg-dark-blue{
-  background-color: #0F1C2E !important;
+.bg-dark-blue {
+  background-color: #0f1c2e !important;
 }
 
 /* THUMBNAIL */
-.thumbnail{
-    width: 100%;
-    height: 200px;
-    background-color: black;
-    position: relative;
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  position: relative;
 }
 
-.thumbnail .title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 8vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin: 0;
+.thumbnail .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 0;
 }
 
 /* CONTENT */
-.content{
-    margin-top: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+.content {
+  margin-top: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 /* SERVICES CARD */
-.services-card{
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    padding: 0;
-    height: 100%;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.services-card {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 0;
+  height: 100%;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.services-card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.services-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.services-card .image{
-    width: 100%;
-    height: 120px;
-    background-color: limegreen;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.services-card .image {
+  width: 100%;
+  height: 120px;
+  background-color: limegreen;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .services-card h3,
-.services-card p{
-    padding: 10px;
+.services-card p {
+  padding: 10px;
 }
