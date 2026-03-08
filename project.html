@@ -19,6 +19,8 @@
 
     <!-- Your CSS -->
     <link rel="stylesheet" href="CSS/project.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR -->
@@ -92,13 +94,11 @@
 
     <!-- THUMBNAIL / HEADER -->
     <section class="thumbnail d-flex align-items-center justify-content-center">
-      <h1 class="title">Projects</h1>
+      <h1 class="title" data-aos="fade-down">Projects</h1>
     </section>
 
-    <!-- CONTENT -->
     <section class="container my-5 content">
-      <h1 class="text-center mb-4">Our Projects Completed</h1>
-
+      <h1 class="text-center mb-4" data-aos="fade-down">Our Projects Completed</h1>
       <div class="row g-4 justify-content-center">
         <!-- PROJECT CARD -->
         <div class="col-6 col-lg-4">
@@ -224,5 +224,13 @@
 
     <script src="JS/Data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    </script>
   </body>
 </html>

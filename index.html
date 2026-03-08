@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
@@ -58,46 +60,46 @@
 <section class="hero-section d-flex align-items-center">
   <div class="container text-center text-white">
     <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-10">
+      <div class="col-lg-6 col-md-10" data-aos="zoom-in" data-aos-duration="1200">
         <h1 id="heroTitle">t</h1>
         <h4 id="heroSubTitle">t</h4>
         <p id="heroParagraph">t</p>
-        <a class="btn btn-warning me-2" href="services.html">See Our Services</a>
-        <a class="btn btn-outline-light" href="contact.html">Contact Us</a>
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a class="btn btn-warning me-2" href="services.html">See Our Services</a>
+            <a class="btn btn-outline-light" href="contact.html">Contact Us</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container my-5 bg-white rounded-4 p-4">
+<section class="container my-5 bg-white rounded-4 p-4 overflow-hidden">
   <div class="row align-items-center g-4">
-
-    <div class="col-lg-6">
+    <div class="col-lg-6" data-aos="fade-right">
       <h1>What We Do</h1>
       <div class="line mb-3"></div>
+      <p id="Description"></p>
+      
+      <div data-aos="fade-up" data-aos-delay="200">
+          <h2>Contact Us:</h2>
+          <p id="Email"></p>
+          <p id="Phone"></p>
+      </div>
 
-      <p id="Description">
-      </p>
-
-      <h2>Contact Us:</h2>
-      <p id="Email"></p>
-      <p id="Phone"></i></p>
-
-      <h2>Featured Services</h2>
-      <ul id="features">
-      </ul>
-
-      <a class="btn btn-warning" href="services.html">View Details</a>
+      <div data-aos="fade-up" data-aos-delay="400">
+          <h2>Featured Services</h2>
+          <ul id="features"></ul>
+          <a class="btn btn-warning" href="services.html">View Details</a>
+      </div>
     </div>
 
-    <div class="col-lg-6 text-center">
+    <div class="col-lg-6 text-center" data-aos="fade-left">
       <img src="IMG/background.png" class="img-fluid rounded-4 section-image" alt="">
     </div>
-
   </div>
 </section>
 
-<section class="customer-promise-section">
+<section class="customer-promise-section" data-aos="fade-up">
   <div class="container">
     <p class="text-center text-white fst-italic mb-0">
       We are committed to delivering consistent quality, on-time delivery, and excellent customer
@@ -107,11 +109,9 @@
 </section>
 
 <section class="container my-5">
-  <h1 class="text-center mb-4">Our Partners</h1>
-  <div class="row g-4 justify-content-center" id="partnerContainer">
-
+  <h1 class="text-center mb-4" data-aos="fade-down">Our Partners</h1>
+  <div class="row g-4 justify-content-center" id="partnerContainer" data-aos="fade-up">
   </div>
-
 </section>
 
 <footer class="bg-dark text-white pt-5 pb-4 mt-5" style="background-color: #001d3d !important;">
@@ -183,6 +183,14 @@
 
 <script src="JS/Data.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100, // Trigger animation when element is 100px from viewport
+  });
+</script>
 
 </body>
 </html>

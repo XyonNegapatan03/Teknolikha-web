@@ -66,7 +66,7 @@ fetch("JS/Data.json")
         aboutThumbnail.textContent = aboutData.Thumbnail.Title;
 
       const whoWeAreCol = document.querySelector(
-        "section.container-fluid.my-5 .col-lg-6",
+        "section.container-fluid.my-4 .col-lg-6",
       );
       if (whoWeAreCol) {
         const branchesHTML = aboutData.WhoWeAre.Branches.map(
@@ -105,10 +105,11 @@ fetch("JS/Data.json")
     }
 
     // --- 3. PROJECTS PAGE LOGIC ---
-    if (path.includes("project.html")) {
+if (path.includes("project.html")) {
       const projectData = data.Projects[0];
       const projectContainer = document.querySelector(".content .row.g-4");
       const pTitle = document.querySelector(".thumbnail .title");
+      
       if (pTitle) pTitle.textContent = projectData.HeaderTitle;
 
       const pSectionTitle = document.querySelector(".container.content h1");
@@ -116,48 +117,74 @@ fetch("JS/Data.json")
 
       if (projectContainer) {
         projectContainer.innerHTML = "";
-        projectData.List.forEach((proj) => {
+        
+        projectData.List.forEach((proj, index) => {
+          // Calculate delay: 0ms, 200ms, 400ms, then reset
+          const delay = (index % 3) * 200;
+
           const col = document.createElement("div");
           col.className = "col-6 col-lg-4";
+          
+          col.setAttribute("data-aos", "fade-down");
+          col.setAttribute("data-aos-delay", delay);
+
           col.innerHTML = `
             <div class="project-card h-100">
-            <div class="image" style="background-image: url('${proj.Image}'); background-size: cover; height: 150px;"></div>
-            <h5><strong>Project Name:</strong> ${proj.Name}</h5>
-            <p>${proj.Description}</p></div>`;
+              <div class="image" style="background-image: url('${proj.Image}'); background-size: cover; height: 150px;"></div>
+              <h5><strong>Project Name:</strong> ${proj.Name}</h5>
+              <p>${proj.Description}</p>
+            </div>`;
           projectContainer.appendChild(col);
         });
+
+        // IMPORTANT: Tell AOS to scan the new cards you just added
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
       }
     }
 
     // --- 4. SERVICES PAGE LOGIC ---
     if (path.includes("services.html")) {
       const servicesData = data.Services[0];
-      const servicesContainer = document.querySelector(
-        ".container.content .row.g-4",
-      );
+      const servicesContainer = document.querySelector(".container.content .row.g-4");
       const sTitle = document.querySelector(".thumbnail .title");
+      
       if (sTitle) sTitle.textContent = servicesData.Header;
 
-      const sSectionTitle = document.querySelector(".container.content h1");
+      // Be careful here: ".container.content h1" will find both 
+      // "Services" (in thumbnail) and "Our Services" (in content).
+      // Use a more specific selector if possible.
+      const sSectionTitle = document.querySelector(".container.content > h1");
       if (sSectionTitle) sSectionTitle.textContent = servicesData.MainTitle;
 
       if (servicesContainer) {
         servicesContainer.innerHTML = "";
-        servicesData.List.forEach((service) => {
+        
+        // ADDED 'index' HERE VVV
+        servicesData.List.forEach((service, index) => {
+          const delay = (index % 3) * 200;
+
           const col = document.createElement("div");
           col.className = "col-6 col-lg-4";
+
+          col.setAttribute("data-aos", "fade-up");
+          col.setAttribute("data-aos-delay", delay);
+          
           col.innerHTML = `
             <div class="services-card h-100">
-                <div class="image" style="background-image: url('${service.Image}'); background-size: cover; height: 150px;"></div>
+                <div class="image" style="background-image: url('${service.Image}'); background-size: cover; background-position: center; height: 150px;"></div>
                 <h3>${service.Title}</h3>
                 <p>${service.Desc}</p>
             </div>`;
           servicesContainer.appendChild(col);
         });
+
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
       }
     }
-
-    // Inside your fetch('JS/data.json').then(data => { ...
 
     // --- CONTACT PAGE SECTION ---
     if (path.includes("contact.html")) {

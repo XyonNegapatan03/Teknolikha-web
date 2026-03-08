@@ -19,6 +19,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/services.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- NAV -->
@@ -91,13 +93,13 @@
     </nav>
 
     <!-- THUMBNAIL -->
-    <div class="thumbnail">
-      <h1 class="title">Services</h1>
+    <div class="thumbnail d-flex align-items-center justify-content-center">
+      <h1 class="title" data-aos="fade-down">Services</h1>
     </div>
 
     <!-- CONTENT -->
     <div class="container content">
-      <h1 class="text-center m-5">Our Services</h1>
+      <h1 class="text-center m-5" data-aos="fade-up">Our Services</h1>
 
       <div class="row g-4">
         <!-- SERVICE CARD -->
@@ -224,5 +226,13 @@
 
     <script src="JS/Data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    </script>
   </body>
 </html>
