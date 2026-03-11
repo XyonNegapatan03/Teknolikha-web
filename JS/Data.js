@@ -195,20 +195,16 @@ if (path.includes("project.html")) {
     if (path.includes("contact.html")) {
       const contactData = data.Contact[0];
 
-      // 1. Update Thumbnail
       const contactTitle = document.querySelector(".thumbnail .title");
       if (contactTitle) contactTitle.textContent = contactData.Thumbnail;
 
-      // 2. Update Addresses
       const contactInfoDiv = document.querySelector(".contact-info");
       if (contactInfoDiv && contactData.Addresses) {
-        // Find the "Address" H1 and update the <p> tags immediately following it
         const addressTitle = Array.from(
           contactInfoDiv.querySelectorAll("h1"),
         ).find((h1) => h1.textContent === "Address");
 
         if (addressTitle) {
-          // Generate HTML for all addresses in the JSON array
           const addressHTML = contactData.Addresses.map(
             (addr) => `
                   <p class="location">
@@ -218,7 +214,6 @@ if (path.includes("project.html")) {
               `,
           ).join("");
 
-          // We update the Phone and Email titles manually to keep the structure clean
           contactInfoDiv.innerHTML = `
                   <h1>Address</h1>
                   ${addressHTML}
