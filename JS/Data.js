@@ -45,9 +45,13 @@ fetch("JS/Data.json")
       const partnerBox = document.getElementById("partnerContainer");
       if (partnerBox && homeData.partners) {
         partnerBox.innerHTML = "";
-        homeData.partners.forEach((p) => {
+        homeData.partners.forEach((p, index) => {
           const col = document.createElement("div");
+          const delay = (index % 3) * 200;
           col.className = "col-12 col-md-6 col-lg-4";
+          col.setAttribute("data-aos", "fade-down");
+          col.setAttribute("data-aos-delay", delay);
+         
           col.innerHTML = `
             <div class="partner-card p-4 border rounded shadow-sm h-100 text-center bg-light">
               <h5 class="fw-bold text-primary">${p.name}</h5>
@@ -95,9 +99,15 @@ fetch("JS/Data.json")
       );
       if (valuesRow) {
         valuesRow.innerHTML = "";
-        aboutData.Values.forEach((val) => {
+        aboutData.Values.forEach((val, index) => {
+
           const col = document.createElement("div");
+          const delay = (index % 5) * 200;
           col.className = "col-6 col-md-4 col-lg-2";
+          col.setAttribute("data-aos", "fade-down");
+          col.setAttribute("data-aos-delay", delay);
+
+
           col.innerHTML = `<div class="value-card h-100"><p class="icon"><i class="fa-light ${val.Icon} fa-2xl"></i></p><p class="fw-bold text-center">${val.Title}</p><p class="text-center">${val.Text}</p></div>`;
           valuesRow.appendChild(col);
         });
@@ -119,11 +129,10 @@ if (path.includes("project.html")) {
         projectContainer.innerHTML = "";
         
         projectData.List.forEach((proj, index) => {
-          // Calculate delay: 0ms, 200ms, 400ms, then reset
           const delay = (index % 3) * 200;
 
           const col = document.createElement("div");
-          col.className = "col-6 col-lg-4";
+          col.className = "col-sm-12 col-md-6 col-lg-4";
           
           col.setAttribute("data-aos", "fade-down");
           col.setAttribute("data-aos-delay", delay);
@@ -137,7 +146,6 @@ if (path.includes("project.html")) {
           projectContainer.appendChild(col);
         });
 
-        // IMPORTANT: Tell AOS to scan the new cards you just added
         if (typeof AOS !== 'undefined') {
           AOS.refresh();
         }
@@ -152,21 +160,18 @@ if (path.includes("project.html")) {
       
       if (sTitle) sTitle.textContent = servicesData.Header;
 
-      // Be careful here: ".container.content h1" will find both 
-      // "Services" (in thumbnail) and "Our Services" (in content).
-      // Use a more specific selector if possible.
+      
       const sSectionTitle = document.querySelector(".container.content > h1");
       if (sSectionTitle) sSectionTitle.textContent = servicesData.MainTitle;
 
       if (servicesContainer) {
         servicesContainer.innerHTML = "";
-        
-        // ADDED 'index' HERE VVV
+                
         servicesData.List.forEach((service, index) => {
           const delay = (index % 3) * 200;
 
           const col = document.createElement("div");
-          col.className = "col-6 col-lg-4";
+          col.className = "col-sm-12 col-md-6 col-lg-4";
 
           col.setAttribute("data-aos", "fade-up");
           col.setAttribute("data-aos-delay", delay);
