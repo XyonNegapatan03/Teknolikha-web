@@ -70,7 +70,7 @@ fetch("JS/Data.json")
         aboutThumbnail.textContent = aboutData.Thumbnail.Title;
 
       const whoWeAreCol = document.querySelector(
-        "section.container-fluid.my-4 .col-lg-6",
+        "section.container.my-4.p-4 .col-lg-6",
       );
       if (whoWeAreCol) {
         const branchesHTML = aboutData.WhoWeAre.Branches.map(
@@ -173,7 +173,7 @@ if (path.includes("project.html")) {
           const col = document.createElement("div");
           col.className = "col-sm-12 col-md-6 col-lg-4";
 
-          col.setAttribute("data-aos", "fade-up");
+          col.setAttribute("data-aos", "fade-down");
           col.setAttribute("data-aos-delay", delay);
           
           col.innerHTML = `
